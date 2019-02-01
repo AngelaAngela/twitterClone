@@ -1,8 +1,7 @@
 let submitButton = document.getElementById("submit-message");
+let imageButton = document.getElementById("submit-image");
 let messageArray =[];
 let messages="";
-let imageButton = document.getElementbyId("submit-image");
-
 
 
 function addToArray () {
@@ -12,7 +11,7 @@ function addToArray () {
 
 function addImageToArray () {
 	let image = document.getElementById("message-input").value;
-	messageArray.push("<img src=" + image + "></img>";
+	messageArray.push("<img src=" + image + "></img>");
 }
 
 function printArray(){
